@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.navbar1{
+    display: flex;
+    font-family: 'Poppins', sans-serif; 
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color: #3A3D41;
+    /* background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url('../img/bg.jpg');
+    background-size: cover; */
+    /* background-color: #1A242F; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 33%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.nav-list1{
+    width: 70%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.nav-list1 li{
+    list-style: none;
+    padding: 16px;
+}
+
+.nav-list1 li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-list1 li a:hover{
+    color: whitesmoke;
+}
+
+.rightNav{
+    padding: 23px;
+    text-align: right;
+    /* background-color: yellow; */
+    width: 30%;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+.background{
+    background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url('../img/bg.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    /* height: 100vh; */
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+.secondHalf img{
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 35.3px;
+    font-weight: 600;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.btn1{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: none;
+    margin-top: 5px;
+    cursor: pointer; 
+}
+
+.btn1:hover{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+.btn1-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 86%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.paras{
+    padding: 0 65px;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.thumbnail img{
+    border: 2px solid white;
+    border-radius: 26px;
+}
+
+.sectionTag{
+    padding: 8px 0;
+}
+
+.form-label1{
+    margin-top: 10px;
+}
+
+.buttonSubmit .btn{
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 68px;
+}
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+#exampleFormControlInput1{
+    border: 0.2px solid black;
+    justify-content: center;
+}
+
+select.form-select{
+    margin-top: 28px;
+    border: 0.2px solid black;
+}
+
+#exampleFormControlTextarea1{
+    border: 0.2px solid black;
+}
+ 
+@media only screen and (max-width: 1326px){
+    .nav-list1{
+        flex-direction: column;
+        margin: auto;
+    }
+    .navbar1{
+        flex-direction: column;
+        height: 447px;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        text-align: center;
+        margin: auto;
+        display: flex;
+    justify-content: space-between;
+    }
+    #search{
+        width: 200px;
+        margin-left: -70px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 71px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+    .titleCont{
+        margin-bottom: 20px;
+    }
+}
